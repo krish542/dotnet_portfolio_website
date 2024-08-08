@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="photography1.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300&display=swap" rel="stylesheet" />
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="StyleSheet1.css" />
+    </head>
+    <body>
+        <div class="container">
+                <div class="logo">
+                    <img src="00001.png" height="100" />
+                    <nav>
+                        <ul>
+                            <li><a href="Overview.aspx">Overview</a></li>
+                            <li><a href="portfolio.aspx">Portfolio</a></li>
+                            <li><a href="videos.aspx">Videos</a></li>
+                            <li style="padding-left: 400px;"><a href="about_contact.aspx">About us & Contact us</a></li>
+                            <li><img id="menuicon" class="icon" src="menu_icon.png" height="30" width="30" style="display:none;"/></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div>
+                    <!--<nav>
+                        <ul>
+                            <li><a href="home.aspx">Overview</a></li>
+                            <li><a href="portfolio.aspx">Portfolio</a></li>
+                            <li><a href="videos.aspx">Videos</a></li>
+                            <li style="padding-left: 400px;"><a href="about_contact.aspx">About us & Contact us</a></li>
+                        </ul>
+                    </nav>-->
+                </div>
+            </div>
+        <form id="form1" runat="server">
+            <div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </form>
+        <div class="footer">
+                <a href="https://www.instagram.com/sevaykar_photography/" style="background-color:transparent;">
+                    <img src="instagramlogo2.png" height="35" style="padding-bottom: 8px;" /></a>
+                <a href="https://www.facebook.com/Sevaykar/" style="background-color:transparent;">
+                    <img src="facebooklogo.png" height="50" /></a>
+                <a href="https://id.pinterest.com/sevaykar_photography/_created/" style="background-color:transparent;">
+                    <img src="pinterestlogo.png" height="50" /></a>
+                <a href="https://twitter.com/SSevaykar?s=08" style="background-color:transparent;">
+                    <img src="twitterlogo.png" height="50" /></a>
+            </div>
+    </body>
+    </html>
+</body>
+</html>
